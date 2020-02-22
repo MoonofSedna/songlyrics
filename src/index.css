@@ -1,13 +1,109 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  padding: 0;
+  background-color: rgb(249, 241, 253);
+  color: #686868;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.content-t{
+  background-image: url("./img-1.jpg");
+  background-size: cover;
+}
+
+
+
+label {
+  font-family: "Crimson Text",  sans-serif;
+  font-size: 22px;
+}
+
+legend {
+  position: relative;
+  z-index: 0; 
+  display: inline-block;
+  width: auto;
+  margin:0;
+  margin-bottom: 40px;
+  font-family: 'Crimson Text', sans-serif;
+  font-size: 4rem;
+  
+}
+
+legend::before {
+  position: absolute;
+  content: '';
+  width: calc(120% );
+  display: block;
+  background-color:#9e3866;
+  height: 40px;
+  z-index:-1;
+  left: -30px;
+  right: -30px;
+  bottom: 10px;
+  transform: rotate(-1deg);
+  transition: transform .3s ease;
+}
+
+legend:hover::before{
+  transform: rotate(2deg);
+}
+
+form.card{
+  border: none;
+}
+
+.alert{
+  background-color: #d81920! important;
+  width: 60%;
+  margin: auto;
+}
+.lyrics {
+  white-space: pre-wrap;
+}
+
+.card img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+button{
+
+  background-color: #9e3866!important;
+}
+
+button:hover{
+
+  background-color: #d44786!important;
+}
+h2 {
+  margin-bottom: 2rem;
+  font-family: 'Work Sans', sans-serif;
+  border-bottom: 3px solid #EB6864;
+  padding-bottom:10px;
+}
+.card-body i {
+  font-size: 3rem;
+  margin-right: 3rem;
+}
+
+.card-header{
+  background-color: #cf4985! important ;
+}
+
+.fa-facebook {
+  color: #3b5998;
+  font-size: 2.2rem!  important;
+}
+.fa-twitter {
+  color: #0084b4;
+  font-size: 2.2rem!  important;
+}
+.fa-lastfm {
+  color: #d51007;
+  font-size: 2.2rem!  important;
 }
